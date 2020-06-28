@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>qq</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="bg-gray-200 sm:flex sm:justify-between sm:px-4 sm:py-3">
+    
+    
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+      <div>
+        <img class="h-12" src="images/eh-logo-horizontal.png" />
+      </div>
+      <div class="sm:hidden">
+        <button id="menuBtn" type="button" class="block text-gray-900 focus:outline-none hover:text-gray-400 " onclick="navToggle()">
+          <svg id="nav-burger-icon" class="h-6 w-6 fill-current" viewBox="0 0 20 20">
+            <path  d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"  />
+          </svg>
+          <svg id="nav-close-icon" class="h-6 w-6 fill-current hidden" viewBox="0 0 20 20">
+            <path  d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="menu" class="px-2 pt-2 pb-4 hidden sm:flex">
+      <a href="#" class="block px-2 text-gray-800 font-semibold rounded-md hover:bg-gray-400">Rooms</a>
+      <a href="#" class="mt-1 block px-2 text-gray-800 font-semibold rounded-md hover:bg-gray-400 sm:mt-0 sm:ml-2">Your stay</a>
+      <a href="#" class="mt-1 block px-2 text-gray-800 font-semibold rounded-md hover:bg-gray-400 sm:mt-0 sm:ml-2">Breakfast</a>
+    </div>
+
+  </header>
+
+
+
+
+  
+  <script src="js/index.js"></script>
+  <script>
+    function navToggle() {
+    var menu = document.getElementById('menu');
+    var burger = document.getElementById('nav-burger-icon');
+    var close = document.getElementById('nav-close-icon');
+    burger.classList.toggle('hidden');
+    close.classList.toggle('hidden');
+    menu.classList.toggle('hidden');
+  }
+  </script>
+</body>
+
+</html>
