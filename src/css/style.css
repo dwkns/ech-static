@@ -1,5 +1,19 @@
 /* purgecss start ignore */
 @tailwind  base;
+
+/* @font-face {
+  font-family: Proxima Nova;
+  font-weight: 500;
+  src: url(/fonts/WorkSans-Regular) format("woff");
+} */
+
+
+@font-face {
+  font-family:"Work Sans Regular";
+  src:url("../fonts/WorkSans-Regular.woff2") format("woff2"),url("../fonts/WorkSans-Regular.woff") format("woff");
+  font-style:normal;font-weight:400;
+}
+    
 @tailwind  components;
 /* purgecss end ignore */
 

@@ -8,48 +8,172 @@
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-  <header class="bg-gray-200 sm:flex sm:justify-between sm:px-4 sm:py-3">
-    
-    
-    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
-      <div>
-        <img class="h-12" src="images/eh-logo-horizontal.png" />
-      </div>
-      <div class="sm:hidden">
-        <button id="menuBtn" type="button" class="block text-gray-900 focus:outline-none hover:text-gray-400 " onclick="navToggle()">
-          <svg id="nav-burger-icon" class="h-6 w-6 fill-current" viewBox="0 0 20 20">
-            <path  d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"  />
-          </svg>
-          <svg id="nav-close-icon" class="h-6 w-6 fill-current hidden" viewBox="0 0 20 20">
-            <path  d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <div id="menu" class="px-2 pt-2 pb-4 hidden sm:flex">
-      <a href="#" class="block px-2 text-gray-800 font-semibold rounded-md hover:bg-gray-400">Rooms</a>
-      <a href="#" class="mt-1 block px-2 text-gray-800 font-semibold rounded-md hover:bg-gray-400 sm:mt-0 sm:ml-2">Your stay</a>
-      <a href="#" class="mt-1 block px-2 text-gray-800 font-semibold rounded-md hover:bg-gray-400 sm:mt-0 sm:ml-2">Breakfast</a>
-    </div>
-
+<body class="text-gray-900 font-thin leading-relaxed">
+  <header class="container mx-auto">
+    <include src="partials/header.html"></include>
   </header>
 
+  <section>
+    <!-- hero -->
+
+    <div class="relative pb-2/3 sm:pb-1/2 lg:pb-1/3 flex">
+      <img class="absolute top-0 h-full w-full  object-cover object-center" src="images/edgcott-long-room.jpg" alt="long room">
+      <div class="absolute h-full w-full flex">
+        <div class="my-auto mx-auto bg-white bg-opacity-85 px-6 py-1 md:px-16 md:py-1 xl:px-20 xl:py-2 shadow-lg text-center">
+          <p class="text-2xl md:text-3xl xl:text-4xl">Edgcott House</p>
+          <p class="text-md md:text-lg xl:text-xl">Luxury Bed & Breakfast in the heart of<br/>Exmoor National Park</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+
+    <div class="container mx-auto px-4 pb-10">
+      <div class="mx-auto w-full py-10 sm:w-3/4 md:w-1/2 text-center text text-2xl">
+        <p>Edgcott House is a historic country home situated in the heart of Exmoor National Park.</p>
+      </div>
+
+      <div class="md:flex">
+        <p class="md:pr-4">Nestled amongst beautiful Moorland, sweeping Oak-lined Valleys and the beautiful rugged coastline, Edgcott House is a luxurious bed and breakfast and is a perfect place to relax or use as your base to explore our beautiful surroundings.</p>
+        <p class="md:pr-4 mt-8 md:mt-0">Nestled amongst beautiful Moorland, sweeping Oak-lined Valleys and the beautiful rugged coastline, Edgcott House is a luxurious bed and breakfast and is a perfect place to relax or use as your base to explore our beautiful surroundings.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="md:flex overflow-hidden  md:pb-0">
+      <div class="max-h-64 md:max-h-256 md:w-2/3 pb-1/3  md:pb-1/4 relative flex">
+        <img class="absolute h-full w-full object-cover object-center" src="images/300-thread-count-linen.jpg" alt="long room">
+        <div class="absolute h-full w-full flex">
+          <div class="m-auto bg-white bg-opacity-85 px-6 py-1 md:px-16 md:py-1 xl:px-20 xl:py-2 shadow-lg text-center">
+            <p class="text-2xl md:text-3xl xl:text-4xl">Our rooms</p>
+          </div>
+        </div>
+      </div>
+
+     <div class="md:w-1/3 flex bg-brand-lightgreen">
+        <div class="m-auto text-center pb-4 md:pb-0">
+          <p class="px-6 lg:px-8 py-6 lg:py-8">We have taken great care to restore each of the 7 bedrooms at Edgcott house to the highest possible standards, with beautiful furnishings and modern appliances ensuring that you’ll have everything you need to enjoy an extra special stay with us.</p>
+          <button class="bg-brand-green text-gray-200 rounded-md shadow-lg px-5 py-2 m-2">See our rooms</button>
+        </div> 
+      </div> 
+    </div>
+    
+  </section>
+
+  <section>
+    <div class="md:flex overflow-hidden flex-row-reverse md:pb-0">
+      <div class="max-h-64 md:max-h-256 md:w-2/3 pb-1/3  md:pb-1/4 relative flex">
+        <img class="absolute h-full w-full object-cover object-center" src="images/eggs-benedict-avocado-bacon.jpg" alt="long room">
+        <div class="absolute h-full w-full flex">
+          <div class="m-auto bg-white bg-opacity-85 px-6 py-1 md:px-16 md:py-1 xl:px-20 xl:py-2 shadow-lg text-center">
+            <p class="text-2xl md:text-3xl xl:text-4xl">The Breakfast</p>
+          </div>
+        </div>
+      </div>
+
+     <div class="md:w-1/3 flex bg-brand-lightgreen">
+        <div class="m-auto text-center pb-4 md:pb-0">
+          <p class="px-6 py-4">We really pride ourselves on the quality of our breakfast, which we prepare fresh every morning especially for you from the best seasonal, local produce available. Whether you want to indulge with dishes such as Banana Pancakes with Honey Yogurt and ginger syrup or keep it traditional with a hearty Full English Breakfast, our delicious daily changing breakfast menu is sure to satisfy.</p>
+          <button class="bg-brand-green text-gray-200 rounded-md shadow-lg px-5 py-2 m-2">See the breakfast</button>
+        </div> 
+      </div> 
+    </div>
+    
+  </section>
+  <!--  
+    <section class="static">
+      <div class="realtive max-h-screen-1/2">
+ 
+        
+      <img class="w-full object-cover object-center absolute" src="images/edgcott-long-room.jpg" alt="long room"> 
+        <div class="w-full flex absolute">
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="static">
+      <div class="w-full bg-brand-lightgreen">
+        <section class="container mx-auto px-4 py-4">
+          <h1 class="text-6xl font-black">Edgcott House</h1>
+          <h2 class="text-4xl">Bed & Breakfast</h2>
+          <p class="mt-2 lg:text-xl lg:max-w-4xl">Edgcott House is a historic country home situated in the heart of Exmoor National Park, Somerset. Nestled amongst beautiful Moorland, sweeping Oak-lined Valleys and the beautiful rugged
+            coastline, Edgcott House is a luxurious bed and breakfast and is a perfect place to relax or use as your base to explore our beautiful surroundings.</p>
+          <div class="w-full lg:max-w-md">
+            <button class="w-full bg-brand-green text-gray-200 rounded-md shadow-lg px-5 py-2 mt-4">01643 831 164</button>
+            <button class="w-full bg-brand-green text-gray-200 rounded-md shadow-lg px-5 py-2 mt-4">Book Online</button>
+          </div>
+      </div>
+    </section>
+
+
+    <section class="container mx-auto px-4 py-4 static">
+
+      <div class="sm:flex sm:flex-row-reverse">
+        <img class="h-screen-1/3 sm:w-1/2 object-cover object-center sm:pl-4" src="images/exmoor-sunset-in-somerset.jpg" alt="long room">
+        <div>
+          <h2 class="text-4xl">Text + Image</h2>
+          <p class="mt-2 lg:text-xl pr-4 font-thin leading-relaxed">We have taken great care to restore each of the 7 bedrooms at Edgcott house to the highest possible standards, with beautiful furnishings and modern appliances ensuring
+            that you’ll have
+            everything you need to enjoy an extra special stay with us. King, Queen and Twin bedrooms are all available, with room for cots which we can provide upon request. Each room is fully equipped with the finest quality linens, and
+            luxurious bathroom products to pamper yourself with. High speed Wi-Fi is available in every room as well as coffee and tea making facilities and flat screen TV. You can check in with us from 4pm. A slice of homemade cake will be
+            waiting for you upon arrival. Check out is at 11am.</p>
+          <button class="sm:w-auto bg-brand-green text-gray-200 rounded-md shadow-lg px-5 py-2 mt-2 mr-4">See the rooms</button>
+        </div>
+      </div>
+    </section>
 
 
 
-  
+
+
+    <section class="container mx-auto px-4 py-4">
+      <h2 class="text-4xl">Image + Image</h2>
+      <div class="sm:flex sm:flex-row">
+        <img class="sm:w-1/2 object-cover object-center sm:pr-4" src="images/exmoor-sunset-in-somerset.jpg" alt="long room">
+        <div>
+          <p class="mt-2 lg:text-xl pl-4">We have taken great care to restore each of the 7 bedrooms at Edgcott house to the highest possible standards, with beautiful furnishings and modern appliances ensuring that you’ll have
+            everything you need to enjoy an extra special stay with us. King, Queen and Twin bedrooms are all available, with room for cots which we can provide upon request. Each room is fully equipped with the finest quality linens, and
+            luxurious bathroom products to pamper yourself with. High speed Wi-Fi is available in every room as well as coffee and tea making facilities and flat screen TV. You can check in with us from 4pm. A slice of homemade cake will be
+            waiting for you upon arrival. Check out is at 11am.</p>
+          <button class="sm:w-auto bg-brand-green text-gray-200 rounded-md shadow-lg px-5 py-2 mt-2 mr-4">See the rooms</button>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="container mx-auto px-4 py-4">
+      <h2 class="text-4xl">The Breakfast at Edgcott</h2>
+      <img class="max-h-screen-1/2 w-full object-cover object-center" src="images/edgcott-house-bed-breakfast.jpg" alt="long room">
+      <p class="mt-2 lg:text-xl lg:max-w-4xl">We really pride ourselves on the quality of our breakfast, which we prepare fresh every morning especially for you from the best seasonal, local produce available. Whether you want to indulge
+        with dishes such as Banana Pancakes with Honey Yogurt and ginger syrup or keep it traditional with a hearty Full English Breakfast, our delicious daily changing breakfast menu is sure to satisfy.</p>
+      <button class="w-full bg-brand-green text-gray-200 rounded-md shadow-lg px-5 py-2 mt-2">See the rooms</button>
+    </section>
+
+    <section class="container mx-auto px-4 py-4">
+      <h2 class="text-4xl">Our rooms</h2>
+      <img class="max-h-screen-1/2 w-full object-cover object-center" src="images/edgcott-house-bed-breakfast.jpg" alt="long room">
+      <p class="mt-2 lg:text-xl lg:max-w-4xl">We have taken great care to restore each of the 7 bedrooms at Edgcott house to the highest possible standards, with beautiful furnishings and modern appliances ensuring that you’ll have
+        everything you need to enjoy an extra special stay with us. King, Queen and Twin bedrooms are all available, with room for cots which we can provide upon request. Each room is fully equipped with the finest quality linens, and
+        luxurious bathroom products to pamper yourself with. High speed Wi-Fi is available in every room as well as coffee and tea making facilities and flat screen TV. You can check in with us from 4pm. A slice of homemade cake will be
+        waiting for you upon arrival. Check out is at 11am.</p>
+      <button class="w-full bg-brand-green text-gray-200 rounded-md shadow-lg px-5 py-2 mt-2">See the rooms</button>
+    </section>
+   -->
+   <include src="partials/footer.html"></include>
   <script src="js/index.js"></script>
   <script>
     function navToggle() {
-    var menu = document.getElementById('menu');
-    var burger = document.getElementById('nav-burger-icon');
-    var close = document.getElementById('nav-close-icon');
-    burger.classList.toggle('hidden');
-    close.classList.toggle('hidden');
-    menu.classList.toggle('hidden');
-  }
+      var menu = document.getElementById('menu');
+      var burger = document.getElementById('nav-burger-icon');
+      var close = document.getElementById('nav-close-icon');
+      burger.classList.toggle('hidden');
+      close.classList.toggle('hidden');
+      menu.classList.toggle('hidden');
+    }
   </script>
 </body>
 
