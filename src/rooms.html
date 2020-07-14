@@ -2,34 +2,27 @@
 <html lang="en">
 
 <head>
-  <title>qq</title>
+  <title>Our Rooms</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-<div class="container mx-auto">
-  <include src="partials/header.html"></include>
-  <h1>Rooms</h1>
-</div>
+<body class="text-gray-900 font-thin leading-relaxed">
 
-<!-- 
-  
+  <include src="./partials/header.html"></include>
+  <include src="./partials/hero.html" locals='{
+    "image": "./images/300-thread-count-linen.jpg",
+    "title": "The Rooms",
+    "mainText": ""
+  }'></include>
+
+  <include src="./partials/intro-copy.html" locals='{
+    "heading": "The rooms at Edgcott House",
+    "mainText1": "The seven bedrooms at Edgcott House are all individually designed and are furnished to give a classic yet contemporary English country house feel. All the rooms have en-suite bathrooms, and comfortable beds with a mixture of antique and modern furniture. The beds are made up with luxury 300 thread count linen and the bathrooms have fluffy towels to make your stay feel extra special.",
+    "mainText2": "All of our rooms have free Wi-Fi, TVs and indulgent natural skincare products. Along with the facilities to make tea and coffee, you will find fresh milk and a slice of delicious homemade cake in your room on your arrival. </br></br> Each room also has a hairdryer, extra blankets and a hot water bottle to help you feel extra cosy on the coldest nights."
+  }'></include>
+
   <script src="js/index.js"></script>
-
-  <script>
-    function navToggle() {
-    var menu = document.getElementById('menu');
-    var burger = document.getElementById('nav-burger-icon');
-    var close = document.getElementById('nav-close-icon');
-    burger.classList.toggle('hidden');
-    close.classList.toggle('hidden');
-    menu.classList.toggle('hidden');
-  }
-
-
-  
-  </script> -->
 </body>
 </html>

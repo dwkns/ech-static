@@ -9,182 +9,64 @@
 </head>
 
 <body class="text-gray-900 font-thin leading-relaxed">
-  <header class="container mx-auto">
-    <include src="partials/header.html"></include>
-  </header>
 
-  <section>
+  <include src="partials/header.html"></include>
+  <include src="./partials/hero.html" locals='{
+    "image": "images/edgcott-main-house-longshot.jpg",
+    "title": "Edgcott House",
+    "mainText": "A luxury Bed & Breakfast in the heart of<br />Exmoor National Park"
+  }'></include>
 
-
-    <div class="relative pb-5/6 sm:pb-1/2 lg:pb-1/3 flex">
-      <img class="absolute top-0 h-full w-full  object-cover object-center" src="images/edgcott-cooked-breakfast.jpg" alt="long room">
-      <div class="absolute h-full w-full flex">
-        <div class="my-auto mx-auto bg-white bg-opacity-85 px-6 py-1 md:px-16 md:py-1 xl:px-20 xl:py-2 shadow-lg text-center">
-          <p class="text-2xl md:text-3xl xl:text-4xl">Edgcott House</p>
-          <p class="text-md md:text-lg xl:text-xl">A luxury Bed & Breakfast in the heart of<br />Exmoor National Park</p>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-6">
-    <div class="sm:col-span-1">
-     
-    </div>
-    <div class="sm:pt-0 sm:col-span-1">
-      
-    </div>
-  </div> -->
-
-  <section class="container mx-auto px-4 pb-4">
-  
-   
-    <div class="grid grid-cols-4 sm:gap-6 pt-10 items-center md:grid-flow-col "> 
-      <div class="col-span-4 md:col-span-2 md:text-left text-center text order-last md:order-first ">
-        <p class="text-4xl pt-6 pb-6 sm:pt-2 md:py-8 max-w-md mx-auto md:mx-0 ">A historic country home situated in beautiful Exford, Somerset.</p>
-      </div>
-      <div class="col-span-2 md:col-span-1 pl-4 ">
-        <button class="block mx-auto bg-brand-green text-gray-200 w-40 sm:w-56 md:w-40 lg:w-56  py-2 my-2 sm:my-3 md:my-1 ">Book online</button>
-      </div>
-  
-      <div class="col-span-2 md:col-span-1 ">
-        <button class="block mx-auto bg-brand-green text-gray-200 w-40 sm:w-56 md:w-40 lg:w-56  py-2 my-2 sm:my-3 md:my-1">01643 831164</button>
-      </div>
-    </div>
+  <include src="./partials/intro-copy.html" locals='{
+    "heading": "A historic country home situated in beautiful Exford, Somerset.",
+    "mainText1": "Nestled amongst beautiful Moorland, sweeping Oak-lined Valleys and the beautiful rugged coastline, Edgcott House is a luxurious bed and breakfast and a perfect place to relax or use as your base to explore our beautiful surroundings.",
+    "mainText2": "Edgcott House is owned and run by Penny and Simon with over 30 years experience working in the catering industry. We hope that our high standards, attention to detail and guest friendly approach will make you stay with us an enjoyable one. "
+  }'></include>
 
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 lg:gap-12 xl:gap-16">
-      <div class="sm:col-span-1">
-        <p>Nestled amongst beautiful Moorland, sweeping Oak-lined Valleys and the beautiful rugged coastline, Edgcott House is a luxurious bed and breakfast and a perfect place to relax or use as your base to explore our
-          beautiful surroundings.</p>
-      </div>
-      <div class="py-8 sm:pt-0 sm:col-span-1">
-        <p>Edgcott House is owned and run by Penny and Simon with over 30 years experience working in the catering industry. We hope that our high standards, attention to detail and guest friendly approach will
-          make you stay with us an enjoyable one. </p>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section>
-    <div class="md:flex overflow-hidden  md:pb-0">
-      <div class="max-h-64 md:max-h-256 md:w-2/3 pb-1/3  md:pb-1/4 relative flex">
-        <img class="absolute h-full w-full object-cover object-center" src="images/300-thread-count-linen.jpg" alt="long room">
-        <div class="absolute h-full w-full flex">
-          <div class="m-auto bg-white bg-opacity-85 px-6 py-1 md:px-16 md:py-1 xl:px-20 xl:py-2 shadow-lg text-center">
-            <p class="text-2xl md:text-3xl xl:text-4xl">Our rooms</p>
-          </div>
-        </div>
-      </div>
-
-      <div class=" md:w-1/3 flex bg-brand-lightgreen">
-        <div class="m-auto text-center pb-4 md:pb-0">
-          <p class="px-6 lg:px-8 pt-6 md:max-w-lg">We have taken great care to restore each of the seven bedrooms at Edgcott house to the highest possible standards, with beautiful furnishings and modern appliances ensuring that you’ll have everything you need to enjoy an exceptional stay with us.</p>
-          <button class="bg-brand-green text-gray-200  px-5 py-2 m-2">See our rooms</button>
-        </div>
-      </div>
-    </div>
 
   </section>
-
-  <section>
-    <div class="md:flex overflow-hidden flex-row-reverse  md:pb-0">
-      <div class="max-h-64 md:max-h-256 md:w-2/3 pb-1/3  md:pb-1/4 relative flex">
-        <img class="absolute h-full w-full object-cover object-center" src="images/eggs-benedict-avocado-bacon.jpg" alt="long room">
-        <div class="absolute h-full w-full flex">
-          <div class="m-auto bg-white bg-opacity-85 px-6 py-1 md:px-16 md:py-1 xl:px-20 xl:py-2 shadow-lg text-center">
-            <p class="text-2xl md:text-3xl xl:text-4xl">The Breakfast</p>
-          </div>
-        </div>
-      </div>
-      <div class="md:w-1/3 flex bg-brand-lightgreen ">
-        <div class="m-auto text-center pb-4 md:pb-0">
-          <p class="px-6 pt-6 md:max-w-lg">We pride ourselves on the quality of our breakfast, which we prepare fresh every morning from the best seasonal, local produce available. Indulge with banana pancakes with honey yoghurt and ginger syrup or keep it traditional with a hearty full English breakfast, our delicious daily changing breakfast menu is sure to satisfy.</p>
-          <button class="bg-brand-green text-gray-200  px-5 py-2  mb-4 mt-4">See the breakfast</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section>
-    <div class="md:flex overflow-hidden  md:pb-0">
-      <div class="max-h-64 md:max-h-256 md:w-2/3 pb-1/3  md:pb-1/4 relative flex">
-        <img class="absolute h-full w-full object-cover object-center" src="images/edgcott-house-bed-breakfast.jpg" alt="long room">
-        <div class="absolute h-full w-full flex">
-          <div class="m-auto bg-white bg-opacity-85 px-6 py-1 md:px-16 md:py-1 xl:px-20 xl:py-2 shadow-lg text-center">
-            <p class="text-2xl md:text-3xl xl:text-4xl">The House</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="md:w-1/3 flex bg-brand-lightgreen">
-        <div class="m-auto text-center pb-4 md:pb-0">
-          <p class="px-6 pt-6 md:max-w-lg">We have seven luxurious bedrooms and the Long Room, perfect for drinks,  canapé reception or a formal dinner. The grounds include an ancient orchard and formal gardens that we are slowing restoring to their former glory.</p>
-          <button class="bg-brand-green text-gray-200  px-5 py-2  mb-4 mt-4">About the house</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section>
-    <div class="md:flex overflow-hidden flex-row-reverse md:pb-0">
-      <div class="max-h-64 md:max-h-256 md:w-2/3 pb-1/3  md:pb-1/4 relative flex">
-        <img class="absolute h-full w-full object-cover object-center" src="images/exmoor-landscape.jpg" alt="long room">
-        <div class="absolute h-full w-full flex">
-          <div class="m-auto bg-white bg-opacity-85 px-6 py-1 md:px-16 md:py-1 xl:px-20 xl:py-2 shadow-lg text-center">
-            <p class="text-2xl md:text-3xl xl:text-4xl">Explore Exmoor</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="md:w-1/3 flex bg-brand-lightgreen">
-        <div class="m-auto text-center pb-4 md:pb-0">
-          <p class="px-6 pt-6 md:max-w-lg">Spend your day on spectacular walks through the moors and valleys of Exmoor or enjoy the hugely varied terrain on horseback or by mountain bike. If you prefer fishing or <a class="underline hover:text-brand-green" href="#">shooting</a>, we're close to the crystal clear waters of the River Exe, and there are world-class Partridge and Pheasant shoots on our doorstep.</p>
-          <button class="bg-brand-green text-gray-200  px-5 py-2  mb-4 mt-4">Explore Exmoor</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <include src="./partials/image-and-text-wide.html" locals='{ 
-    "title": "Explore Exmoor",
-    "buttonText": "Explore Exmoor",
-    "align": "right",
-    "mainText": "Spend your day on spectacular walks through the moors and valleys of Exmoor or enjoy the hugely varied terrain on horseback or by mountain bike. If you prefer fishing or ,were close to the crystal clear waters of the River Exe, and there are world-class Partridge and Pheasant shoots on our doorstep."
+    "align": "imageLeft", 
+    "image": "./images/300-thread-count-linen.jpg",
+    "title": "Our rooms",
+    "buttonText": "See our rooms",
+    "buttonLink" : "#",
+    "mainText": "We have taken great care to restore each of the seven bedrooms at Edgcott house to the highest possible standards, with beautiful furnishings and modern appliances ensuring that you’ll have everything you need to enjoy an exceptional stay with us."
   }'>
-  <!-- <a class="underline hover:text-brand-green" href="#">shooting</a> -->
   </include>
 
-  <section class="">
-    <div class="container mx-auto px-4 pb-10">
+  <include src="./partials/image-and-text-wide.html" locals='{ 
+    "align": "imageRight", 
+    "image": "images/eggs-benedict-avocado-bacon.jpg",
+    "title": "The Breakfast",
+    "buttonText": "See the breakfast",
+    "buttonLink" : "#",
+    "mainText": "We pride ourselves on the quality of our breakfast, which we prepare fresh every morning from the best seasonal, local produce available. Indulge with banana pancakes with honey yoghurt and ginger syrup or keep it traditional with a hearty full English breakfast, our delicious daily changing breakfast menu is sure to satisfy."
+  }'>
+  </include>
 
-      <div class="mx-auto w-full py-10 sm:w-3/4 md:w-1/2 lg:w-2/3 text-center text text-4xl">
-        <p>Cascade cottage</p>
-      </div>
-      <p class="m-auto text-center md:w-1/2 pb-5">Within the grounds of Edgcott House, "Cascade Cottage" is a charming self-catering cottage which sleeps up to 6 people. With the stream, Edgcott Water, flowing past the front door it is a
-        tranquil place to relax and rejuvenate.</p>
-      <div class="mx-auto w-full pb-10  pt-5 sm:w-3/4 md:w-1/2 lg:w-2/3 text-center text">
-        <button class="bg-brand-green text-gray-200  px-5 py-2 mb-4 mt-4">Find out more about Cascade Cottage</button>
-      </div>
+  <include src="./partials/image-and-text-wide.html" locals='{ 
+    "align": "imageLeft", 
+    "image": "images/edgcott-house-bed-breakfast.jpg",
+    "title": "The house",
+    "buttonText": "About the house",
+    "buttonLink" : "#",
+    "mainText": "We have seven luxurious bedrooms and the Long Room, perfect for drinks,  canapé reception or a formal dinner. The grounds include an ancient orchard and formal gardens that we are slowing restoring to their former glory."
+  }'>
+  </include>
 
+  <include src="./partials/image-and-text-wide.html" locals='{ 
+    "align": "imageRight", 
+    "image": "images/exmoor-landscape.jpg",
+    "title": "Explore Exmoor",
+    "buttonText": "Explore Exmoor",
+    "buttonLink" : "#",
+    "mainText": "Spend your day on spectacular walks through the moors and valleys of Exmoor or enjoy the hugely varied terrain on horseback or by mountain bike. If you prefer fishing or <a class=\"underline hover:text-brand-green\" href=\"#\">shooting</a>, we&apos;re close to the crystal clear waters of the River Exe, and there are world-class Partridge and Pheasant shoots on our doorstep."
+  }'>
+  </include>
 
-
-
-      <div class="w-full flex flex-wrap">
-        <img class="w-full sm:w-1/2  pr-1 object-cover object-center pb-4" src="images/cc-cascade-cottage-holiday-home-exmoor.jpg" alt="">
-        <img class="w-full sm:w-1/2  pr-1 pl-1 object-cover object-center pb-4" src="images/cc-holiday-cottage-bedroom-exmoor.jpg" alt="">
-        <img class="w-full sm:w-1/2  pr-1 pl-1 object-cover object-center pb-4" src="images/cc-living-room-at-holiday-cottage.jpg" alt="">
-        <img class="w-full sm:w-1/2  pl-1 object-cover object-center pb-4" src="images/cc-welcome-pack-holiday-rental.jpg" alt="">
-      </div>
-
-    </div>
-  </section>
-
+  <include src="./partials/cascade-cottage.html"></include>
   <include src="partials/footer.html"></include>
   <script src="js/index.js"></script>
 </body>
