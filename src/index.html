@@ -8,66 +8,73 @@
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body class="text-gray-900 font-thin leading-relaxed">
-
-  <include src="partials/header.html"></include>
-  <include src="./partials/hero.html" locals='{
-    "image": "images/edgcott-main-house-longshot.jpg",
-    "title": "Edgcott House",
-    "mainText": "A luxury Bed & Breakfast in the heart of<br />Exmoor National Park"
-  }'></include>
-
-  <include src="./partials/intro-copy.html" locals='{
-    "heading": "A historic country home situated in beautiful Exford, Somerset.",
-    "mainText1": "Nestled amongst beautiful Moorland, sweeping Oak-lined Valleys and the beautiful rugged coastline, Edgcott House is a luxurious bed and breakfast and a perfect place to relax or use as your base to explore our beautiful surroundings.",
-    "mainText2": "Edgcott House is owned and run by Penny and Simon with over 30 years experience working in the catering industry. We hope that our high standards, attention to detail and guest friendly approach will make you stay with us an enjoyable one. "
-  }'></include>
-
-
-
+<body class="text-gray-900 font-thin leading-relaxed debug-screens">
+  <section class="">
+    <include src="./partials/header.html"></include>
   </section>
-  <include src="./partials/image-and-text-wide.html" locals='{ 
-    "align": "imageLeft", 
-    "image": "./images/300-thread-count-linen.jpg",
-    "title": "Our rooms",
-    "buttonText": "See our rooms",
-    "buttonLink" : "#",
-    "mainText": "We have taken great care to restore each of the seven bedrooms at Edgcott house to the highest possible standards, with beautiful furnishings and modern appliances ensuring that you’ll have everything you need to enjoy an exceptional stay with us."
-  }'>
-  </include>
+  <section class="">
+    <include src="./partials/hero.html" locals='{ 
+             
+              "image": "./images/edgcott-house-bed-breakfast.jpg",
+              "titleOverImage": "Edgecott House",
+              "mainText": "A luxury Bed & Breakfast in the heart of Exmoor National Park"
+            }'>
+    </include>
+  </section>
+  <section class="py-12 bg-brand-lightgreen">
+    <include src="./partials/intro-copy.html" locals='{ 
+              "heading": "Edgecott House",
+              "mainText1": "Nestled amongst beautiful Moorland, sweeping Oak-lined Valleys and the beautiful rugged coastline, Edgcott House is a luxurious bed and breakfast and a perfect place to relax or use as your base to explore our beautiful surroundings.",
+              "mainText2": "Edgcott House is owned and run by Penny and Simon with over 30 years experience working in the catering industry. We hope that our high standards, attention to detail and guest friendly approach will make you stay with us an enjoyable one."
+            }'>
+    </include>
+  </section>
+  <section class="">
+    <include src="./partials/image-and-text-wide.html" locals='{ 
+      "align": "imageRight", 
+      "image": "images/eggs-benedict-avocado-bacon.jpg",
+      "titleOverImage": "The Breakfast",
+      "buttonText": "See the breakfast",
+      "buttonLink" : "./breakfast.html",
+      "heading": "",
+      "mainText": "We pride ourselves on the quality of our breakfast, which we prepare fresh every morning from the best seasonal, local produce available. Indulge with banana pancakes with honey yoghurt and ginger syrup or keep it traditional with a hearty full English breakfast, our delicious daily changing breakfast menu is sure to satisfy."
+    }'>
+    </include>
+  </section>
 
-  <include src="./partials/image-and-text-wide.html" locals='{ 
-    "align": "imageRight", 
-    "image": "images/eggs-benedict-avocado-bacon.jpg",
-    "title": "The Breakfast",
-    "buttonText": "See the breakfast",
-    "buttonLink" : "#",
-    "mainText": "We pride ourselves on the quality of our breakfast, which we prepare fresh every morning from the best seasonal, local produce available. Indulge with banana pancakes with honey yoghurt and ginger syrup or keep it traditional with a hearty full English breakfast, our delicious daily changing breakfast menu is sure to satisfy."
-  }'>
-  </include>
+  <section>
+    <include src="./partials/image-and-text-wide.html" locals='{ 
+      "align": "imageLeft",
+      "image": "images/edgcott-house-bed-breakfast.jpg",
+      "titleOverImage": "The house",
+      "heading": "The house",
+      "mainText": "We have seven luxurious bedrooms and the Long Room, perfect for drinks, canapé reception or a formal dinner. The grounds include an ancient orchard and formal gardens that we are slowing restoring to their former glory.",
+      "buttonText": "About the house",
+      "buttonLink" : "#"
+    }'>
+    </include>
+  </section>
 
-  <include src="./partials/image-and-text-wide.html" locals='{ 
-    "align": "imageLeft", 
-    "image": "images/edgcott-house-bed-breakfast.jpg",
-    "title": "The house",
-    "buttonText": "About the house",
-    "buttonLink" : "#",
-    "mainText": "We have seven luxurious bedrooms and the Long Room, perfect for drinks,  canapé reception or a formal dinner. The grounds include an ancient orchard and formal gardens that we are slowing restoring to their former glory."
-  }'>
-  </include>
+  <section>
+    <include src="./partials/image-and-text-wide.html" locals='{ 
+        "align": "imageRight", 
+        "image": "images/exmoor-landscape.jpg",
+        "titleOverImage": "Explore Exmoor",
+        "buttonText": "Explore Exmoor",
+        "buttonLink" : "#",
+        "heading": "",
+        "mainText": "Spend your day on spectacular walks through the moors and valleys of Exmoor or enjoy the hugely varied terrain on horseback or by mountain bike. If you prefer fishing or <a class=\"underline hover:text-brand-green\" href=\"#\">shooting</a>, we&apos;re close to the crystal clear waters of the River Exe, and there are world-class Partridge and Pheasant shoots on our doorstep."
+      }'>
+    </include>
+  </section>
+  <section class="py-12 bg-brand-lightgreen">
+    <include src="./partials/cascade-cottage.html"></include>
+  </section>
 
-  <include src="./partials/image-and-text-wide.html" locals='{ 
-    "align": "imageRight", 
-    "image": "images/exmoor-landscape.jpg",
-    "title": "Explore Exmoor",
-    "buttonText": "Explore Exmoor",
-    "buttonLink" : "#",
-    "mainText": "Spend your day on spectacular walks through the moors and valleys of Exmoor or enjoy the hugely varied terrain on horseback or by mountain bike. If you prefer fishing or <a class=\"underline hover:text-brand-green\" href=\"#\">shooting</a>, we&apos;re close to the crystal clear waters of the River Exe, and there are world-class Partridge and Pheasant shoots on our doorstep."
-  }'>
-  </include>
+  <section class="">
+    <include src="./partials/footer.html"></include>
+  </section>
 
-  <include src="./partials/cascade-cottage.html"></include>
-  <include src="partials/footer.html"></include>
   <script src="js/index.js"></script>
 </body>
 

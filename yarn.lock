@@ -5342,6 +5342,11 @@ symbol-tree@^3.2.2:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
+tailwindcss-debug-screens@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-debug-screens/-/tailwindcss-debug-screens-1.0.0.tgz#d677e0f9429176de1f70ab060a2b227b268bce90"
+  integrity sha512-IJ6lcAFIKe3FyTr3iJF2ky5ujGoPP3J6roDi4B49zTZLQ/eMKq0ILHAGxGYylZmQsyIxIGqEM22DnUA6+RsS2Q==
+
 tailwindcss@^1.4.6:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.5.1.tgz#a3eb10024f8e10786b8b6badcf9665b013bd03ee"

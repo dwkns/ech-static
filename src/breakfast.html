@@ -9,49 +9,145 @@
 </head>
 
 <body class="text-gray-900 font-thin leading-relaxed">
-  <header class=" px-4 mx-auto">
-    <include src="partials/header.html"></include>
-  </header>
+    <section class="">
+      <include src="./partials/header.html"></include>
+    </section>
 
-  <!-- <section>
+  <section>
     <include src="./partials/hero.html" locals='{
-      "image": "images/full-english-at-edcott-house.jpg",
-      "title": "Breakfast at Edgcott House",
+      "image": "./images/full-english-at-edcott-house.jpg",
+      "titleOverImage": "Breakfast at Edgcott House",
       "mainText": ""
     }'></include>
-  </section> -->
-
-  <section class="px-4 mx-auto pb-4">
-    <include src="./partials/intro-copy.html" locals='{
-      "heading": "The breakfast at Edgecott",
-      "mainText1": "Our kitchen at Edgcott House is really the heart of the home. With over 30 years experience as a chef, Penny has a real passion for good food prepared with care using seasonal produce. We believe that breakfast is the most important meal of the day, and we’ll ensure that you get your day off to the best start possible with a fantastic selection of home cooked delights.",
-      "mainText2": "Our philosophy is to serve top quality food using the finest local ingredients to create wide ranging and varied menus. We are surrounded by fantastic produce and we believe in buying locally wherever possible."
-    }'></include>
   </section>
 
-  <section class=" px-4 mx-auto mb-4">
+    <section class="py-12 ">
+      <include src="./partials/intro-copy.html" locals='{ 
+                  "heading": "Breakfast at Edgcott House",
+                  "mainText1": "Our kitchen at Edgcott House is really the heart of the home. With over 30 years experience as a chef, Penny has a real passion for good food prepared with care using seasonal produce. We believe that breakfast is the most important meal of the day, and we’ll ensure that you get your day off to the best start possible with a fantastic selection of home cooked delights.",
+                  "mainText2": "Our philosophy is to serve top quality food using the finest local ingredients to create wide ranging and varied menus. We are surrounded by fantastic produce and we believe in buying locally wherever possible."
+                }'>
+      </include>
+    </section>
+
+  <section class="mt-12 py-12 bg-brand-lightgreen">
+    <div class="container mx-auto px-4 md:px-12 lg:px-24 xl:px-48">
+      <h1 class="text-center col-span-1 lg:col-span-2 text-3xl py-8">The Breakfast Menu</h1>
+      <h2 class="text-xl text-center py-8">As a trained and experienced chef, Penny is excited by food and changes the menus on a daily basis with new and innovative options based on the produce available.</h2>
+      <p class="pb-6">
+        We have both savoury and sweet daily specials such as Bubble and Squeak with Crisp Smoked Streaky Bacon, topped with a Poached Egg or Plum and Pecan waffles with lashings of maple syrup. Of course, there are some firm favourites which
+        are available every day such as crunchy home-made muesli, with dried fruit, nuts and healthy grains. Our delicious fresh fruit smoothies, made with local seasonal fruits packed full of goodness.
+      </p>
+      <p class="pb-6">
+        And of course, a full English breakfast including the classics: Locally dry cured bacon, succulent sausages, home baked fried bread, oven roasted tomatoes, juicy Portobello mushrooms, black pudding, and free-range eggs, made any way
+        you like, fresh from the neighbour’s chickens.
+      </p>
+      <p class="pb-6">
+        An equally delicious vegetarian Full English is also available, with Homemade Baked Beans, Griddled Avocado, Potatoes, Portobello Mushrooms, Oven Baked Tomatoes, and Eggs as you like them! We are happy to cater to your dietary
+        requirements, ensuring that everyone can have a delicious breakfast! Please let us know of any dietary requirements at the time of booking so we can create something just for you.
+      </p>
+    </div>
+  </section>
+  <section class="my-24">
+    <div class="container mx-auto px-4 md:px-12 lg:px-24 xl:px-48 grid grid-cols-12 gap-4">
+      <img class="col-span-12 h-32 sm:h-auto sm:col-span-12 w-full object-cover object-center" src="./images/breakfast-home-made-bread-at-edgcott.jpg" alt="">
+      <img class="col-span-12 h-32 sm:h-auto sm:col-span-6 w-full object-cover object-center" src="./images/breakfast-stacks_image_6138.jpg" alt="">
+      <img class="col-span-12 h-32 sm:h-auto sm:col-span-6 w-full object-cover object-center" src="./images/breakfast-ultimate-breakfast-at-edgcott-bnb.jpg" alt="">
+      <img class="col-span-12 h-32 sm:h-auto sm:col-span-4 w-full object-cover object-center" src="./images/breakfast-home-made-churros-real-hot-chocolate.jpg" alt="">
+      <img class="col-span-12 h-32 sm:h-auto sm:col-span-4 w-full object-cover object-center" src="./images/breakfast-scones-and-jelly-for-breakfast-at-edgcott.jpg" alt="">
+      <img class="col-span-12 h-32 sm:h-auto sm:col-span-4 w-full  object-cover object-center" src="./images/breakfast-pear-pancakes-bed-breakfast-somerset.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="py-24 bg-brand-lightgreen">
+    <div class="container mx-auto px-4 md:px-12 lg:px-24 xl:px-48">
+      <div class="border border-gray-300 bg-white w-full shadow-md text-center py-8">
+        <h1 class="text-3xl">Sample Breakfast Menu</h1>
+        <p class="">From 7am</p>
   
-      <div class="grid grid-cols-12 gap-4">
-        <img class="col-span-12 h-32 sm:h-auto sm:col-span-12 w-full object-cover object-center" src="images/breakfast-home-made-bread-at-edgcott.jpg" alt="">
-        <img class="col-span-12 h-32 sm:h-auto sm:col-span-6 w-full object-cover object-center" src="images/breakfast-stacks_image_6138.jpg" alt="">
-        <img class="col-span-12 h-32 sm:h-auto sm:col-span-6 w-full object-cover object-center" src="images/breakfast-ultimate-breakfast-at-edgcott-bnb.jpg" alt="">
-        <img class="col-span-12 h-32 sm:h-auto sm:col-span-4 w-full object-cover object-center" src="images/breakfast-home-made-churros-real-hot-chocolate.jpg" alt="">
-        <img class="col-span-12 h-32 sm:h-auto sm:col-span-4 w-full object-cover object-center" src="images/breakfast-scones-and-jelly-for-breakfast-at-edgcott.jpg" alt="">
-        <img class="col-span-12 h-32 sm:h-auto sm:col-span-4 w-full  object-cover object-center" src="images/breakfast-pear-pancakes-bed-breakfast-somerset.jpg" alt="">
-
+        <div class="mx-auto px-6 text-sm py-8 sm:max-w-lg ">
+          <h1 class="text-2xl pt-6 pb-8 mt-8 border-t-2 border-gray-300 ">Available every day</h1>
+          <p>Apple, Orange, & Apple, Blueberry & Lavender Juices</p>
+          <p>Cereals and Edgcott Muesli</p>
+          <p class="py-4">~~~</p>
+          <p class="text-lg">Traditional Porridge</p>
+          <p>Served with Organic Double Cream, Demerara Sugar & Exmoor Honey (V)</p>
+          <p class="py-4">~~~</p>
+          <p class="text-lg">Full English Breakfast</p>
+          <p>2 Rashers of Bacon, Sausage, Black Pudding, Portobello Mushrooms, Oven Baked Tomatoes, Fried Bread and Eggs cooked as you like.</p>
+          <p class="py-4">~~~</p>
+          <p class="text-lg">Vegetarian Full English</p>
+          <p>Homemade Baked Beans, Griddled Avocado, Potatoes, Portobello Mushrooms, Baked Tomatoes, and Eggs as you like (V)</p>
+          <p class="py-4">~~~</p>
+          <p>One or Two Simply Boiled Free-range Eggs (V)</p>
+          <p class="py-4 ">~~~</p>
+          <p>All served with a Selection of Toast made from Homemade Bread, with Homemade Preserves and Local Honey</p>
+  
+          <p class="text-2xl pt-6 pb-8 mt-8 border-t-2 border-gray-300 ">Typical daily specials</p>
+          <p>Kiwi, & Avocado Smoothie with Lime & Honey (V)</p>
+          <p class="py-4">~~~</p>
+          <p>Rhubarb & Strawberry with Organic Guernsey Milk Yogurt & Homemade Nut & Seed Granola (V)</p>
+          <p class="py-4">~~~</p>
+          <p>Banana & Honey Porridge with Poppy Seeds & Almonds (V)</p>
+          <p class="py-4">~~~</p>
+          <p>Smoked Haddock Poached & served with Mustard Sauce topped with a Poached Egg</p>
+          <p class="py-4">~~~</p>
+          <p>Pear Pancakes with Toasted Macadamia Nuts, Crème Fraiche & Lots of Maple Syrup (V)</p>
+  
+        </div>
       </div>
+    </div>
+  </section>
 
-
-
+  <section class="mt-12 ">
+    <div class="container mx-auto px-4 md:px-12 lg:px-24 xl:px-48 pb-12">
+      <h1 class="text-center col-span-1 lg:col-span-2 text-3xl pt-12">Local, sustainably sourced food</h1>
+      <p class="pt-12">We believe in buying the best but we also believe in buying locally; we buy very locally whereever and whenever possible. We use the village shop for fantastic produce including butter, cream and fresh vegetables such as asparagus and
+      mushrooms and beautiful fish such as smoked trout & our neighbours in the village supply us with eggs and blueberries when in season. We grow all of our herbs in our lovely garden, as well as seasonal fruit such as rhubarb and gooseberries.</p>
+</div>
   </section>
 
 
+  <section class="mt-12 pb-12"> 
+    <div class="container mx-auto px-4 md:px-12 lg:px-24 xl:px-48 grid grid-cols-1 lg:grid-cols-2 col-gap-8">
+      <h1 class="text-center col-span-1 lg:col-span-2 text-3xl py-8">Our suppliers</h1>
+  
+      <div class="col-span-1 text-center">
+        <img class="mx-auto h-32 py-4" src="./images/breakfast-bloomberry-logo.png" alt="">
+        <h2 class="text-2xl pt-4">The Ultimate Fresh Juices</h2>
+        <h3>Bloomberry of Devon</h3>
+        <p class="py-4 sm:text-left">A small slightly mad company run by Chris and Sarah Jones nestled amongst the narrow lanes of Devon making amazing juices from natural ingredients and extract. Bloomsbury creates amazing and delicious
+          award-winning juices by adding unique twists to classic juice combinations. Apple, Blueberry and Lavender juice is a favourite at Edgcott House.</p>
+      </div>
+  
+      <div class="col-span-1 text-center">
+        <img class="mx-auto h-32 py-4" src="./images/breakfast-miles-logo.png" alt="">
+        <h2 class="text-2xl pt-4">Tea & Coffee</h2>
+        <h3>Miles of Minehead</h3>
+        <p class="py-4 sm:text-left">Miles are a tea and coffee merchants based in West Somerset. Split between two sites, they taste, buy, blend and pack their own brand of tea, 'Miles Tea', in Minehead whilst their coffee is roasted, ground
+          and packed in Porlock. A true family business with a passion for service and quality which is reflected in their award winning products which are served every day at Edgcott House</p>
+      </div>
+  
+      <div class="col-span-1 text-center">
+        <img class="mx-auto h-32 py-4" src="./images/breakfast-john-may-logo.png" alt="">
+        <h2 class="text-2xl pt-4">Our butcher</h2>
+        <h3>John May’s of South Molton</h3>
+        <p class="py-4 sm:text-left">All meat sold by John May Family Butcher is butchered, processed and prepared on site by a team that has over 130 years butchery experience between them. The bacon used for Edgcott Houses breakfast is dry
+          cured on the premises and smoked bacon is prepared in their own smoker on their farm. We also get our delicious sausages and black pudding from John Mays.</p>
+      </div>
+  
+      <div class="col-span-1 text-center">
+        <img class="mx-auto h-32 py-4" src="./images/breakfast-somerset-may-logo.png" alt="">
+        <h2 class="text-2xl pt-4">The best for all the rest</h2>
+        <h3>Somerset Local</h3>
+        <p class="py-4 sm:text-left">Somerset Local's ethos is to make quality local food available to everyone in Somerset. Working with the finest farmers markets, they deliver the highest quality local produce from thier fammily of
+          suppliers, directly to our door, every single day. It doesn't get fresher than that.</p>
+      </div>
+  
+    </div>
+  </section>
 
-
-<section class=" px-4  mx-auto">
- <include src="./partials/cascade-cottage.html"></include>
-</section>
-  <footer class="mx-auto">
+  <footer class="">
     <include src="partials/footer.html"></include>
   </footer>
   <script src="js/index.js"></script>

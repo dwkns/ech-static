@@ -1,18 +1,16 @@
-<section>
-  <div class="md:flex overflow-hidden {{align === 'imageRight' ? 'flex-row-reverse' : '' }} md:pb-0">
-    <div class="max-h-64 md:max-h-256 md:w-2/3 pb-1/3  md:pb-1/4 relative flex">
-      <img class="absolute h-full w-full object-cover object-center" src="{{image}}" alt="long room">
+<div class="grid grid-cols-12 gap-0">
+    <div class="relative col-span-12 lg:col-span-8 h-64 md:h-96 {{align === 'imageRight' ? 'lg:order-last' : '' }}">
+      <img class="absolute h-full w-full object-cover object-center" src="{{image}}">
+
       <div class="absolute h-full w-full flex">
-        <div class="m-auto bg-white bg-opacity-85 px-6 py-1 md:px-16 md:py-1 xl:px-20 xl:py-2 shadow-lg text-center">
-          <h1 class="text-2xl md:text-3xl xl:text-4xl">{{title}}</h1>
+        <div class="m-auto bg-white bg-opacity-75 px-6 shadow-lg text-center">
+          <h1 class="text-2xl md:text-3xl xl:text-4xl">{{titleOverImage}}</h1>
         </div>
       </div>
     </div>
-    <div class="md:w-1/3 flex bg-brand-lightgreen">
-      <div class="m-auto text-center pb-4 md:pb-0 ">
-        <p class="px-6 pt-6 md:max-w-lg">{{{mainText}}}</p>
-        <a href="{{buttonLink}}"><button class="bg-brand-green hover:bg-brand-darkgreen text-gray-200  px-5 py-2  mb-4 mt-4">{{buttonText}}</button></a>
-      </div>
+    <div class="col-span-12 lg:col-span-4 text-center m-auto px-4 sm:px-16 lg:px-12 pt-8">
+      <h2 class="text-2xl md:text-3xl xl:text-4xl">{{heading}}</h2>
+      <p class="">{{{mainText}}}</p>
+      <a href="{{buttonLink}}"><button class="bg-brand-green hover:bg-brand-darkgreen text-gray-200 px-8 py-2  mb-4 mt-4">{{buttonText}}</button></a>
     </div>
-  </div>
-</section>
+</div>
