@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Edgcott House : A luxury Bed & Breakfast in the heart of Exmoor National Park</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link href="css/style.css" rel="stylesheet" />
-</head>
-<body class="text-gray-900 font-thin leading-relaxed debug-screens">
+<include src="./partials/page-top.html" locals='{
+"pageTitle": "Edgcott House : A luxury Bed & Breakfast in the heart of Exmoor National Park"
+}'></include>
+
+
   <section class="">
     <include src="./partials/header.html"></include>
   </section>
@@ -17,6 +13,8 @@
           "mainText": ""
         }'></include>
   </section>
+
+
   <section class="py-12">
     <include src="./partials/intro-copy-containted.html" locals='{ 
                   "heading": "Shoot Accommodation",
@@ -73,7 +71,4 @@
   <section class="bg-brand-green">
     <include src="./partials/footer.html"></include>
   </section>
-  <script src="js/index.js"></script>
-</body>
-
-</html>
+<include src="./partials/page-bottom.html"></include>
