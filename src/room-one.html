@@ -1,0 +1,123 @@
+
+<include src="./partials/page-top.html" locals='{
+  "pageTitle": "Edgcott House : A luxury Bed & Breakfast in the heart of Exmoor National Park"
+  }'></include>
+  
+  
+  <include src="./partials/header.html"></include>
+  <include src="./partials/hero.html" locals='{
+      "image": "./images/300-thread-count-linen.jpg",
+      "titleOverImage": "Room 1",
+      "mainText": ""
+    }'></include>
+  
+  <!-- <include src="./partials/intro-copy-containted.html" locals='{
+      "heading": "The rooms at Edgcott House",
+      "mainText1": "The seven bedrooms at Edgcott House are all individually designed and are furnished to give a classic yet contemporary English country house feel. All the rooms have en-suite bathrooms, and comfortable beds with a mixture of antique and modern furniture. The beds are made up with luxury 300 thread count linen and the bathrooms have fluffy towels to make your stay feel extra special.",
+      "mainText2": "All of our rooms have free Wi-Fi, TVs and indulgent natural skincare products. Along with the facilities to make tea and coffee, you will find fresh milk and a slice of delicious homemade cake in your room on your arrival. </br></br> Each room also has a hairdryer, extra blankets and a hot water bottle to help you feel extra cosy on the coldest nights.",
+      "button1Text": "Book online",
+      "button1Url": "http://securebooking.eviivo.com/mywebsite/details.aspx?shortname=EdgcottTA247QG",
+      "button2Text":"01643 831164",
+      "button2Url" : "tel:01643 831164"
+    }'></include> -->
+  <!-- <div class="px-4 lg:px-0 col-span-1 flex items-center lg:inline">
+    <a href="{{{buttonUrl}}}"><button class="block bg-brand-green text-gray-200 w-32  sm:w-56 md:w-32 lg:w-40 xl:w-48 py-2 m-0">{{{buttonText}}}</button></a>
+  </div> -->
+  
+  <section>
+    <div class="container mx-auto pt-12">
+      <include src="./partials/components/button.html" locals='{
+          "buttonUrl": "/rooms.html",
+          "buttonText":"back to all rooms"
+          }'>
+      </include>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container mx-auto py-12">
+      <div class="grid grid-cols-12 lg:gap-12">
+        <div class="col-span-12 lg:col-span-8">
+          <div class="h-64 md:h-96" style="
+                          background-image: url('https://source.unsplash.com/800x600/?bed');
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center center;">
+          </div>
+          <p class="pt-12 lg:pr-32 px-4 lg:pl-0">Room 1 is a generously sized en-suite room looking out over the beautiful garden. You’ll stay in a king size bed with high quality bedding guaranteeing a great nights sleep.</p>
+  
+          <p class="pt-8 lg:pr-32 px-4 lg:pl-0">There is very comfortable leather sofa in the room, where you can relax with a hot drink made using our Tea and Nespresso coffee making facilities. It’s also a great place to enjoy watching our wall mounted LCD TV, with Freeview channels available. The bay window means that the room floods with light, with duck egg blue décor contributing to the airy calming feel.</p>
+  
+          <p class="pt-8 lg:pr-32 px-4 lg:pl-0">The room is also large enough to accommodate a family with either the sofa converting into a bed or there is room to accomodate a travel cot, which we can supply on request. The large en-suite has a heated towel radiator with large fluffy towels and indulgent natural bath products made locally. The traditional cast iron bath is perfect for soaking in after a day out on Exmoor.</p>
+  
+        </div>
+  
+        <div class="py-12 lg:py-0 col-span-12 lg:col-span-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 lg:gap-y-12 lg:text-center">
+            <include src="./partials/components/icon-and-text.html" locals='{
+              "text": "King size bed",
+              "iconURL":"./images/bed.svg"
+            }'>
+            </include>
+            <include src="./partials/components/icon-and-text.html" locals='{ 
+              "text": "Optional use of sofa bed",
+              "iconURL":"./images/sofa-bed.svg"
+            }'>
+            </include>
+            <include src="./partials/components/icon-and-text.html" locals='{
+              "text": "En-suite with bath and power shower",
+              "iconURL":"./images/bath.svg"
+            }'>
+            </include>
+            <include src="./partials/components/icon-and-text.html" locals='{
+              "text": "Alarm with Bluetooth music streaming",
+              "iconURL":"./images/clock.svg"
+            }'>
+            </include>
+            <include src="./partials/components/icon-and-text.html" locals='{
+              "text": "Flat screen TV",
+              "iconURL":"./images/tv.svg"
+            }'>
+            </include>
+            <include src="./partials/components/icon-and-text.html" locals='{
+              "text": "Wi-Fi",
+              "iconURL":"./images/wi-fi.svg"
+            }'>
+            </include>
+            <include src="./partials/components/icon-and-text.html" locals='{
+              "text": "Nespresso machine and tea making facilities",
+              "iconURL":"./images/coffee-maker.svg"
+            }'>
+            </include>
+            <include src="./partials/components/icon-and-text.html" locals='{
+              "text": "Full length mirror",
+              "iconURL":"./images/mirror.svg"
+            }'>
+            </include>
+            <include src="./partials/components/icon-and-text.html" locals='{
+              "text": "",
+              "iconURL":""
+            }'>
+            </include>
+  
+            <include src="./partials/components/button.html" locals='{
+                    "buttonUrl": "https://via.eviivo.com/edgcottta247qg",
+                    "buttonText":"check availabilty"
+                    }'>
+            </include>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <include src="./partials/components/3-image-block.html" locals='{
+        "image1URL": "https://source.unsplash.com/800x600/?bed",
+        "image2URL": "https://source.unsplash.com/800x600/?hotel",
+        "image3URL": "https://source.unsplash.com/800x600/?apples"
+      }'>
+    </include>
+  </section>
+  
+  <include src="./partials/page-bottom.html"></include>
